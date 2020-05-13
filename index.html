@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>basic :: navigator.userAgent property</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<style>
+</style>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+$(function(){
+	var agent=navigator.userAgent.toLowerCase();
+
+	if(agent.indexOf("android") != -1 || agent.indexOf("iphone") != -1 || agent.indexOf("ipad") != -1){
+		// Mobile URL입니다.
+		location.href="Dazed_Mobile/index.html";
+	}
+	else{
+		// PC URL입니다.
+		location.href="Dazed_Pc/index.html";
+	}
+});
+</script>
+</head>
+
+<body></body>
+</html>
